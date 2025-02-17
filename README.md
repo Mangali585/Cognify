@@ -1,2 +1,2 @@
-# Cognify
+# Cognifyz
 Cognify internship task
