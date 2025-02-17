@@ -1,0 +1,244 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding-top: 48px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 140, 0, 0.7); 
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #d35400; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: url('turkeyy.jpeg') no-repeat center center/cover;
+    color: white;
+    padding: 60px 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header h1:hover {
+    letter-spacing: 2px;
+    transform: scale(1.05);
+    color: #e0ce6d;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header p:hover {
+    transform: scale(1.03);
+    color: #ffcc80;
+}
+
+section {
+    padding: 40px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #d35400;
+    font-size: 2rem;
+}
+
+h2:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    flex-wrap: wrap;
+}
+
+.about img {
+    width: 400px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.about img:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features li {
+    background: #ffcc80;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: left;
+    width: 100%;
+}
+
+.features ul li:hover {
+    transform: scale(1.05);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.grid img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+.card {
+    background: #ffcc80;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.travel-tips ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.travel-tips li {
+    background: #ffcc80;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: left;
+    width: 100%;
+}
+
+.travel-tips ul li:hover {
+    transform: scale(1.04);
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    background: #e3f2fd;
+    padding: 20px;
+    border-left: 5px solid #2196f3;
+    display: inline-block;
+    max-width: 500px;
+}
+
+.contact a {
+    color: #e74c3c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        padding: 8px 0;
+    }
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+        display: block;
+        text-align: center;
+    }
+}
